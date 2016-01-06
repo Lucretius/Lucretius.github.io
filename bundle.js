@@ -50,15 +50,19 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Hello = __webpack_require__(158);
+	var _reactDom = __webpack_require__(158);
 
-	var _Hello2 = _interopRequireDefault(_Hello);
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _Page = __webpack_require__(159);
+
+	var _Page2 = _interopRequireDefault(_Page);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	main();
 	function main() {
-	    _react2.default.render(_react2.default.createElement(_Hello2.default, null), document.getElementById('app'));
+	    _reactDom2.default.render(_react2.default.createElement(_Page2.default, null), document.getElementById('app'));
 	}
 
 /***/ },
@@ -19647,6 +19651,15 @@
 
 	'use strict';
 
+	module.exports = __webpack_require__(3);
+
+
+/***/ },
+/* 159 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
 	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
 	Object.defineProperty(exports, "__esModule", {
@@ -19665,30 +19678,62 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Hello = (function (_React$Component) {
-	  _inherits(Hello, _React$Component);
+	var Page = (function (_React$Component) {
+	  _inherits(Page, _React$Component);
 
-	  function Hello() {
-	    _classCallCheck(this, Hello);
+	  function Page() {
+	    _classCallCheck(this, Page);
 
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Hello).apply(this, arguments));
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Page).apply(this, arguments));
 	  }
 
-	  _createClass(Hello, [{
-	    key: 'render',
+	  _createClass(Page, [{
+	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'h1',
-	        null,
-	        'Goodbye world'
+	        "div",
+	        { style: styles.page },
+	        _react2.default.createElement(
+	          "div",
+	          { style: styles.titleSection },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "row center-xs" },
+	            _react2.default.createElement(
+	              "h1",
+	              null,
+	              "Robert Lippens"
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "row center-xs" },
+	            _react2.default.createElement(
+	              "h4",
+	              null,
+	              "Software Engineer"
+	            )
+	          )
+	        )
 	      );
 	    }
 	  }]);
 
-	  return Hello;
+	  return Page;
 	})(_react2.default.Component);
 
-	exports.default = Hello;
+	exports.default = Page;
+
+	var styles = {
+	  page: {
+	    fontFamily: "'Lustria', sans-serif",
+	    color: 'white'
+	  },
+	  titleSection: {
+	    fontSize: '2em',
+	    background: '#3949AB'
+	  }
+	};
 
 /***/ }
 /******/ ]);
