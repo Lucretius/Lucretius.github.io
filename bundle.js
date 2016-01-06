@@ -19717,8 +19717,13 @@
 	            ),
 	            _react2.default.createElement(
 	              'a',
-	              { key: 'about', style: styles.ghostButton, href: '#' },
+	              { key: 'about', style: styles.ghostButton, href: '#/work' },
 	              'About'
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { key: 'work', style: styles.ghostButton, href: '#' },
+	              'Work'
 	            ),
 	            _react2.default.createElement(
 	              'a',
@@ -19730,7 +19735,7 @@
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { style: [styles.section, styles.first], className: 'row center-xs middle-xs' },
+	          { style: styles.section, className: 'row center-xs middle-xs' },
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'col-xs-12 col-md-7 col-lg-5' },
@@ -19749,7 +19754,7 @@
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { style: [styles.section, styles.second], className: 'row center-xs middle-xs' },
+	          { style: styles.section, className: 'row center-xs middle-xs' },
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'col-xs-12 col-md-5' },
@@ -19768,7 +19773,7 @@
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { style: [styles.section, styles.third], className: 'row center-xs middle-xs' },
+	          { style: styles.section, className: 'row center-xs middle-xs' },
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'col-xs-12 col-md-7 col-lg-5' },
@@ -19783,6 +19788,46 @@
 	            'div',
 	            { className: 'col-xs-12 col-md-5' },
 	            _react2.default.createElement('div', { style: styles.image })
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { style: styles.work, className: 'row center-xs middle-xs' },
+	          _react2.default.createElement(
+	            'h1',
+	            { style: styles.headline },
+	            'Work'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'row around-xs' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'col-xs-12 col-lg-4 center-xs' },
+	              _react2.default.createElement(
+	                'h1',
+	                null,
+	                'Yumble'
+	              ),
+	              _react2.default.createElement('img', { src: '/public/yumble2.mov.gif', height: '300', width: '200' }),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'A portmanteau of \'yum\' and \'gamble\', Yumble is a restaurant-finding with a twist - the restaurant is gambled for by rolling the dice.  Written for iOS in Objective-C, making use of mapKit, geolocation, and Apple\'s Direction API - the app integrates with Foursquare\'s API to provide restaurant data.'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'col-xs-12 col-lg-4  center-xs' },
+	              'Yumble',
+	              fillerText
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'col-xs-12 col-lg-4  center-xs' },
+	              'Yumble',
+	              fillerText
+	            )
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -19817,6 +19862,13 @@
 	  section: {
 	    backgroundColor: '#6A1B9A',
 	    fontSize: '20px',
+	    textAlign: 'justify',
+	    lineHeight: '1.5',
+	    padding: '0 20px'
+	  },
+	  work: {
+	    backgroundColor: '#ffffff',
+	    color: 'black',
 	    textAlign: 'justify',
 	    lineHeight: '1.5',
 	    padding: '0 20px'

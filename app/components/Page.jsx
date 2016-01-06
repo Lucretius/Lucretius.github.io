@@ -26,14 +26,15 @@ class Page extends React.Component {
           <div styles={styles.headline} className="col-xs-12">
             <h1>Robert Lippens</h1>
             <div style={{paddingBottom: 100}}>Full Stack Developer</div>
-            <a key="about" style={styles.ghostButton} href="#">About</a>
+            <a key="about" style={styles.ghostButton} href="#/work">About</a>
+            <a key="work" style={styles.ghostButton} href="#">Work</a>
             <a key="email" style={styles.ghostButton} href="mailto:rlippens39@gmail.com">Email</a>
           </div>
           <div className="col-xs-12 around-xs center-xs">
 
           </div>
         </div>
-        <div style={[styles.section, styles.first]} className="row center-xs middle-xs">
+        <div style={styles.section} className="row center-xs middle-xs">
           <div className="col-xs-12 col-md-7 col-lg-5">
             <h1>Front-End Development</h1>
             {fillerText}
@@ -42,7 +43,7 @@ class Page extends React.Component {
             <div style={styles.image}></div>
           </div>
         </div>
-        <div style={[styles.section, styles.second]} className="row center-xs middle-xs">
+        <div style={styles.section} className="row center-xs middle-xs">
           <div className="col-xs-12 col-md-5">
             <div style={styles.image}></div>
           </div>
@@ -51,13 +52,34 @@ class Page extends React.Component {
             {fillerText}
           </div>
         </div>
-        <div style={[styles.section, styles.third]} className="row center-xs middle-xs">
+        <div style={styles.section} className="row center-xs middle-xs">
           <div className="col-xs-12 col-md-7 col-lg-5">
             <h1>Passion</h1>
             {fillerText}
           </div>
           <div className="col-xs-12 col-md-5">
             <div style={styles.image}></div>
+          </div>
+        </div>
+        <div style={styles.work} className="row center-xs middle-xs">
+          <h1 style={styles.headline}>Work</h1>
+          <div className="row around-xs">
+            <div className="col-xs-12 col-lg-4 center-xs">
+              <h1>Yumble</h1>
+              <img src="/public/yumble2.mov.gif" height="300" width="200"/>
+              <p>A portmanteau of 'yum' and 'gamble', Yumble is a restaurant-finding
+              with a twist - the restaurant is gambled for by rolling the dice.  Written for iOS
+              in Objective-C, making use of mapKit, geolocation, and Apple's Direction API - the app
+              integrates with Foursquare's API to provide restaurant data.</p>
+            </div>
+            <div className="col-xs-12 col-lg-4  center-xs">
+              Yumble
+            {fillerText}
+            </div>
+            <div className="col-xs-12 col-lg-4  center-xs">
+              Yumble
+            {fillerText}
+            </div>
           </div>
         </div>
         <div style={[styles.section, styles.footer]} className="row center-xs">
@@ -88,6 +110,13 @@ var styles={
   section: {
     backgroundColor: '#6A1B9A',
     fontSize: '20px',
+    textAlign: 'justify',
+    lineHeight: '1.5',
+    padding: '0 20px',
+  },
+  work: {
+    backgroundColor: '#ffffff',
+    color: 'black',
     textAlign: 'justify',
     lineHeight: '1.5',
     padding: '0 20px',
