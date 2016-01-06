@@ -19704,7 +19704,7 @@
 	          { style: styles.titleSection, className: 'row center-xs middle-xs' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'col-xs-12' },
+	            { styles: styles.headline, className: 'col-xs-12' },
 	            _react2.default.createElement(
 	              'h1',
 	              null,
@@ -19712,14 +19712,25 @@
 	            ),
 	            _react2.default.createElement(
 	              'div',
-	              null,
+	              { style: { paddingBottom: 100 } },
 	              'Full Stack Developer'
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { key: 'about', style: styles.ghostButton, href: '#' },
+	              'About'
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { key: 'email', style: styles.ghostButton, href: 'mailto:rlippens39@gmail.com' },
+	              'Email'
 	            )
-	          )
+	          ),
+	          _react2.default.createElement('div', { className: 'col-xs-12 around-xs center-xs' })
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { style: [styles.section, styles.first], className: 'row center-xs' },
+	          { style: [styles.section, styles.first], className: 'row center-xs middle-xs' },
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'col-xs-12 col-md-7 col-lg-5' },
@@ -19732,16 +19743,16 @@
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'col-xs-5' },
+	            { className: 'col-xs-12 col-md-5' },
 	            _react2.default.createElement('div', { style: styles.image })
 	          )
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { style: [styles.section, styles.second], className: 'row center-xs' },
+	          { style: [styles.section, styles.second], className: 'row center-xs middle-xs' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'col-xs-5  start-xs' },
+	            { className: 'col-xs-12 col-md-5' },
 	            _react2.default.createElement('div', { style: styles.image })
 	          ),
 	          _react2.default.createElement(
@@ -19757,7 +19768,7 @@
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { style: [styles.section, styles.third], className: 'row center-xs' },
+	          { style: [styles.section, styles.third], className: 'row center-xs middle-xs' },
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'col-xs-12 col-md-7 col-lg-5' },
@@ -19770,7 +19781,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'col-xs-5' },
+	            { className: 'col-xs-12 col-md-5' },
 	            _react2.default.createElement('div', { style: styles.image })
 	          )
 	        ),
@@ -19791,28 +19802,61 @@
 	    fontFamily: "'Lustria', sans-serif",
 	    color: 'white'
 	  },
+	  logos: {
+	    padding: 100
+	  },
+	  headline: {
+	    marginBottom: 50
+	  },
 	  titleSection: {
 	    fontSize: '2em',
-	    background: '#673AB7',
-	    height: '400px'
+	    background: '#ffffff',
+	    color: '#E91E63',
+	    height: 400
 	  },
 	  section: {
+	    backgroundColor: '#6A1B9A',
 	    fontSize: '20px',
 	    textAlign: 'justify',
 	    lineHeight: '1.5',
 	    padding: '0 20px'
 	  },
-	  first: {
-	    backgroundColor: '#3F51B5'
+	  reactLogo: {
+	    height: '45px',
+	    paddingBottom: '8px',
+	    paddingLeft: '5px',
+	    paddingRight: '5px'
 	  },
-	  second: {
-	    backgroundColor: '#2196F3'
-	  },
-	  third: {
-	    backgroundColor: '#03A9F4'
+	  htmlLogo: {
+	    height: '60px',
+	    paddingLeft: '5px',
+	    paddingRight: '5px'
 	  },
 	  footer: {
 	    backgroundColor: '#E91E63'
+	  },
+	  image: {
+	    backgroundColor: 'black',
+	    height: '100%',
+	    maxHeight: '600px',
+	    border: '1px solid black',
+	    borderRadius: '2%',
+	    margin: 50
+	  },
+	  ghostButton: {
+	    border: '2px solid #E91E63',
+	    fontSize: '0.8em',
+	    fontWeight: 'bold',
+	    color: '#E91E63',
+	    borderRadius: '7%',
+	    textDecoration: 'none',
+	    padding: '5px 20px',
+	    margin: 40,
+	    transition: 'all ease 500ms',
+	    ':hover': {
+	      color: '#6A1B9A',
+	      border: '2px solid #6A1B9A'
+	    }
 	  }
 	};
 
